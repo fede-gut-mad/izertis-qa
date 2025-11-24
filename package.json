@@ -1,0 +1,29 @@
+{
+  "name": "izertis-qa",
+  "version": "1.0.0",
+  "description": "prueba tecnica para QA de automatizacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require-module ts-node/register --require 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fede-gut-mad/izertis-qa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fede-gut-mad/izertis-qa/issues"
+  },
+  "homepage": "https://github.com/fede-gut-mad/izertis-qa#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
+    "playwright": "^1.56.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
