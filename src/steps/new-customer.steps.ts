@@ -29,7 +29,7 @@ When(`I submit the New Customer form without filling any field`,  async function
 
     this.page.on('dialog', async (dialog) => { 
         process.env.Message = await dialog.message();
-        console.log('Dialog message:' + process.env.Message), 
+        // console.log('Dialog message:' + process.env.Message), 
         await dialog.accept(); 
     }); 
     
