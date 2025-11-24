@@ -1,0 +1,46 @@
+name: E2E Cross-browser Tests (Cucumber + Playwright)
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    - cron: "0 3 * * *"
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chromium, firefox]
+
+    env:
+      ACTIONS_CACHE_DISABLED: true
+      PLAYWRIGHT_BROWSERS_PATH: 0
+      BROWSER: ${{ matrix.browser }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Cucumber tests and generate report
+        run: npm run test:report
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: "cucumber-html-report-${{ matrix.browser }}"
+          path: reports/html

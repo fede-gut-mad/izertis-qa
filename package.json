@@ -4,7 +4,9 @@
   "description": "prueba tecnica para QA de automatizacion",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --require-module ts-node/register --require 'src/**/*.ts'"
+    "test": "cucumber-js --require-module ts-node/register --require 'src/**/*.ts' --format json:reports/report.json",
+    "report": "node generate-report.js",
+    "test:report": "npm test && npm run report"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,682 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-guru99-bank;page-title-is-visible",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Page title is visible",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1230923875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1007427290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the page title should be \"Guru99 Bank\"",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5098500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401603667
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-guru99-bank;reset-button-clears-fields",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Reset button clears fields",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1276828083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 944614375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I fill the login form with user \"user\" and password \"pass\"",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39147291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the reset button",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36438834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the login form fields should be empty",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7788583
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 387612750
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-guru99-bank;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1246214207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 981885875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181375416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the manager home page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1613695499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 390703833
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-guru99-bank",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login to Guru99 Bank",
+    "tags": [],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "new-customer-management;new-customer-page-is-accessible-from-the-menu",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "New Customer page is accessible from the menu",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1189199042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1004912707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177635582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I am on the New Customer page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337622334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the New Customer form",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75426083
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 399807917
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "new-customer-management;required-fields-validation",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Required fields validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1226061582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2580569374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259734749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I am on the New Customer page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 559045999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I submit the New Customer form without filling any field",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119987290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an alert message",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442291
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 394667540
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "new-customer-management;pin-must-be-numeric",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "PIN must be numeric",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1204389624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1068194999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181094249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I am on the New Customer page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 318265999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill the New Customer form with an invalid PIN \"xyz123\"",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52972166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see a PIN validation error",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5241624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 392034750
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "new-customer-management;email-must-be-valid",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Email must be valid",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1206112082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 992776750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189931000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I am on the New Customer page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328248125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I fill the New Customer form with an invalid email \"emailinvalido.com\"",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48712917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see an email validation error",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5664165
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 396979458
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "new-customer-management;create-a-new-customer-successfully",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Create a new customer successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1242235749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1047876083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178972999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I am on the New Customer page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 329262124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I fill the New Customer form with valid data",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106353500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I submit the New Customer form",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289033290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should see the new customer confirmation page",
+            "match": {
+              "location": "file:/Users/fgutierrez/code/personal/izertis-qa/izertis-qa/src/steps/new-customer.steps.ts:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128694666
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 388628124
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "new-customer-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "New Customer management",
+    "tags": [],
+    "uri": "features/new_customer.feature"
+  }
+]
