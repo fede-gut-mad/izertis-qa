@@ -2,7 +2,8 @@
 
 ## Description
 
-QA technical test for IZERTIS QA Automation Engineer position, providing E2E UI automated tests
+QA technical test for IZERTIS QA Automation Engineer position, providing E2E UI automated tests for login and create a new customer.
+Features include: login, new customer, alerts handling, retry logic, cross-browser testing, reporting and CI/CD
 
 ## Tech Stack
 
